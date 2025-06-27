@@ -1,0 +1,85 @@
+<svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#61DAFB;stop-opacity:0.2" />
+      <stop offset="50%" style="stop-color:#00ff88;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.2" />
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#61DAFB" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="240" fill="#0a0a0a"/>
+  <rect width="400" height="240" fill="url(#bg)"/>
+  <rect width="400" height="240" fill="url(#grid)"/>
+  
+  <!-- Dashboard mockup -->
+  <g transform="translate(30, 30)">
+    <!-- Main container -->
+    <rect x="0" y="0" width="340" height="180" rx="8" fill="#1a1a1a" stroke="#61DAFB" stroke-width="1"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="340" height="30" rx="8" fill="#2d3748"/>
+    <text x="20" y="20" fill="#61DAFB" font-family="monospace" font-size="12" font-weight="bold">📊 Analytics Dashboard</text>
+    
+    <!-- Sidebar -->
+    <rect x="0" y="30" width="80" height="150" fill="#1e2632"/>
+    <rect x="10" y="45" width="60" height="3" fill="#61DAFB" opacity="0.8"/>
+    <rect x="10" y="55" width="45" height="2" fill="#666"/>
+    <rect x="10" y="65" width="50" height="2" fill="#666"/>
+    <rect x="10" y="75" width="40" height="2" fill="#666"/>
+    
+    <!-- Charts area -->
+    <g transform="translate(90, 40)">
+      <!-- Chart 1 -->
+      <rect x="0" y="0" width="120" height="60" rx="4" fill="#61DAFB" opacity="0.1" stroke="#61DAFB" stroke-width="1"/>
+      <!-- Fake chart lines -->
+      <polyline points="10,45 30,35 50,25 70,30 90,20 110,15" stroke="#61DAFB" stroke-width="2" fill="none"/>
+      <polyline points="10,50 30,40 50,35 70,40 90,30 110,25" stroke="#00ff88" stroke-width="2" fill="none"/>
+      
+      <!-- Chart 2 -->
+      <rect x="130" y="0" width="110" height="60" rx="4" fill="#00ff88" opacity="0.1" stroke="#00ff88" stroke-width="1"/>
+      <!-- Fake bars -->
+      <rect x="140" y="35" width="8" height="20" fill="#00ff88"/>
+      <rect x="155" y="25" width="8" height="30" fill="#00ff88"/>
+      <rect x="170" y="40" width="8" height="15" fill="#00ff88"/>
+      <rect x="185" y="20" width="8" height="35" fill="#00ff88"/>
+      <rect x="200" y="30" width="8" height="25" fill="#00ff88"/>
+      <rect x="215" y="15" width="8" height="40" fill="#00ff88"/>
+      
+      <!-- Stats cards -->
+      <rect x="0" y="75" width="75" height="40" rx="4" fill="#333" stroke="#61DAFB" stroke-width="1"/>
+      <text x="37" y="90" text-anchor="middle" fill="#61DAFB" font-family="monospace" font-size="8">Users</text>
+      <text x="37" y="105" text-anchor="middle" fill="#fff" font-family="monospace" font-size="12" font-weight="bold">1.2K</text>
+      
+      <rect x="85" y="75" width="75" height="40" rx="4" fill="#333" stroke="#00ff88" stroke-width="1"/>
+      <text x="122" y="90" text-anchor="middle" fill="#00ff88" font-family="monospace" font-size="8">Revenue</text>
+      <text x="122" y="105" text-anchor="middle" fill="#fff" font-family="monospace" font-size="12" font-weight="bold">€15K</text>
+      
+      <rect x="170" y="75" width="75" height="40" rx="4" fill="#333" stroke="#00d4ff" stroke-width="1"/>
+      <text x="207" y="90" text-anchor="middle" fill="#00d4ff" font-family="monospace" font-size="8">Orders</text>
+      <text x="207" y="105" text-anchor="middle" fill="#fff" font-family="monospace" font-size="12" font-weight="bold">347</text>
+    </g>
+  </g>
+  
+  <!-- React logo hint -->
+  <g transform="translate(360, 15)">
+    <circle cx="15" cy="15" r="12" stroke="#61DAFB" stroke-width="2" fill="none"/>
+    <circle cx="15" cy="15" r="3" fill="#61DAFB"/>
+    <ellipse cx="15" cy="15" rx="20" ry="8" stroke="#61DAFB" stroke-width="1" fill="none" transform="rotate(30 15 15)"/>
+    <ellipse cx="15" cy="15" rx="20" ry="8" stroke="#61DAFB" stroke-width="1" fill="none" transform="rotate(-30 15 15)"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="200" y="220" text-anchor="middle" fill="#61DAFB" font-family="monospace" font-size="12" opacity="0.9">
+    REACT DASHBOARD
+  </text>
+  
+  <!-- Corner decorations -->
+  <path d="M0 0 L25 0 L25 2 L2 2 L2 25 L0 25 Z" fill="#61DAFB" opacity="0.6"/>
+  <path d="M400 0 L375 0 L375 2 L398 2 L398 25 L400 25 Z" fill="#61DAFB" opacity="0.6"/>
+  <path d="M0 240 L25 240 L25 238 L2 238 L2 215 L0 215 Z" fill="#61DAFB" opacity="0.6"/>
+  <path d="M400 240 L375 240 L375 238 L398 238 L398 215 L400 215 Z" fill="#61DAFB" opacity="0.6"/>
+</svg>

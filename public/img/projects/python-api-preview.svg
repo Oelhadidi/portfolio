@@ -1,0 +1,72 @@
+<svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3776AB;stop-opacity:0.2" />
+      <stop offset="50%" style="stop-color:#ff006e;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.2" />
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#3776AB" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="240" fill="#0a0a0a"/>
+  <rect width="400" height="240" fill="url(#bg)"/>
+  <rect width="400" height="240" fill="url(#grid)"/>
+  
+  <!-- API Interface mockup -->
+  <g transform="translate(40, 25)">
+    <!-- Terminal/API window -->
+    <rect x="0" y="0" width="320" height="190" rx="8" fill="#1a1a1a" stroke="#3776AB" stroke-width="1"/>
+    <!-- Terminal header -->
+    <rect x="0" y="0" width="320" height="25" rx="8" fill="#2d3748"/>
+    <circle cx="15" cy="12.5" r="4" fill="#ff006e"/>
+    <circle cx="35" cy="12.5" r="4" fill="#ffbb00"/>
+    <circle cx="55" cy="12.5" r="4" fill="#00ff88"/>
+    <text x="80" y="16" fill="#3776AB" font-family="monospace" font-size="10">FastAPI Server</text>
+    
+    <!-- API Content -->
+    <g transform="translate(15, 35)">
+      <!-- FastAPI docs interface -->
+      <text x="0" y="15" fill="#3776AB" font-family="monospace" font-size="12" font-weight="bold">🚀 FastAPI</text>
+      <text x="0" y="30" fill="#00ff88" font-family="monospace" font-size="10">GET /api/users</text>
+      <text x="0" y="45" fill="#ff006e" font-family="monospace" font-size="10">POST /api/auth/login</text>
+      <text x="0" y="60" fill="#00d4ff" font-family="monospace" font-size="10">PUT /api/users/{id}</text>
+      <text x="0" y="75" fill="#ffbb00" font-family="monospace" font-size="10">DELETE /api/users/{id}</text>
+      
+      <!-- Response example -->
+      <rect x="0" y="90" width="280" height="70" rx="4" fill="#333" stroke="#3776AB" stroke-width="1"/>
+      <text x="10" y="105" fill="#3776AB" font-family="monospace" font-size="8">Response 200:</text>
+      <text x="10" y="120" fill="#00ff88" font-family="monospace" font-size="8">{</text>
+      <text x="20" y="135" fill="#fff" font-family="monospace" font-size="8">"users": [...],</text>
+      <text x="20" y="148" fill="#fff" font-family="monospace" font-size="8">"total": 42</text>
+      <text x="10" y="158" fill="#00ff88" font-family="monospace" font-size="8">}</text>
+    </g>
+    
+    <!-- Database icon -->
+    <g transform="translate(270, 40)">
+      <rect x="0" y="0" width="30" height="20" rx="4" fill="#336791" stroke="#336791" stroke-width="1"/>
+      <text x="15" y="12" text-anchor="middle" fill="#fff" font-family="monospace" font-size="8">DB</text>
+      <text x="15" y="30" text-anchor="middle" fill="#336791" font-family="monospace" font-size="6">PostgreSQL</text>
+    </g>
+  </g>
+  
+  <!-- Python logo hint -->
+  <g transform="translate(10, 10)">
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#3776AB"/>
+    <circle cx="6" cy="6" r="2" fill="#FFD43B"/>
+    <circle cx="14" cy="14" r="2" fill="#FFD43B"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="200" y="220" text-anchor="middle" fill="#3776AB" font-family="monospace" font-size="12" opacity="0.9">
+    PYTHON FASTAPI
+  </text>
+  
+  <!-- Corner decorations -->
+  <path d="M0 0 L25 0 L25 2 L2 2 L2 25 L0 25 Z" fill="#3776AB" opacity="0.6"/>
+  <path d="M400 0 L375 0 L375 2 L398 2 L398 25 L400 25 Z" fill="#3776AB" opacity="0.6"/>
+  <path d="M0 240 L25 240 L25 238 L2 238 L2 215 L0 215 Z" fill="#3776AB" opacity="0.6"/>
+  <path d="M400 240 L375 240 L375 238 L398 238 L398 215 L400 215 Z" fill="#3776AB" opacity="0.6"/>
+</svg>

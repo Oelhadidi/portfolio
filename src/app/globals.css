@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --color-primary: #00ff88;
+    --color-accent: #ff006e;
+    --color-secondary: #00d4ff;
+    --color-background: #0a0a0a;
+    --color-background-card: #1a1a1a;
+    --color-text: #00ff88;
+    --color-text-muted: #888888;
+  }
+  
+  .light {
+    --color-primary: #006b3d;
+    --color-accent: #cc0056;
+    --color-secondary: #0091cc;
+    --color-background: #ffffff;
+    --color-background-card: #f8f9fa;
+    --color-text: #1a1a1a;
+    --color-text-muted: #555555;
+  }
+
+  html {
+    font-family: 'Fira Code', monospace;
+  }
+  
+  body {
+    @apply bg-background text-text transition-colors duration-300;
+  }
+  
+  .light body {
+    @apply bg-background-light text-text-light;
+  }
+}
+
+@layer components {
+  .cyber-border {
+    @apply border relative;
+    border-color: rgba(0, 255, 136, 0.3);
+  }
+  
+  .cyber-border::before {
+    content: '';
+    @apply absolute -inset-1 opacity-20 blur-sm;
+    background: linear-gradient(45deg, #00ff88, #ff006e, #00d4ff);
+    z-index: -1;
+  }
+  
+  .glow-text {
+    text-shadow: 0 0 10px currentColor;
+  }
+  
+  .light .glow-text {
+    text-shadow: 0 0 5px currentColor;
+  }
+  
+  .cyber-grid {
+    background-image: 
+      linear-gradient(rgba(0, 255, 136, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 255, 136, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+  
+  .light .cyber-grid {
+    background-image: 
+      linear-gradient(rgba(0, 107, 61, 0.2) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 107, 61, 0.2) 1px, transparent 1px);
+  }
+  
+  .card-cyber {
+    @apply rounded-lg p-6 relative overflow-hidden;
+    background: linear-gradient(145deg, rgba(26, 26, 26, 0.8), rgba(51, 51, 51, 0.3));
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .light .card-cyber {
+    background: linear-gradient(145deg, rgba(248, 249, 250, 0.9), rgba(255, 255, 255, 0.95));
+    border-color: rgba(0, 107, 61, 0.2);
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+      0 2px 4px -1px rgba(0, 0, 0, 0.06),
+      0 0 0 1px rgba(0, 107, 61, 0.1);
+  }
+  
+  .btn-cyber {
+    @apply px-6 py-3 bg-transparent font-mono uppercase tracking-wider transition-all duration-300 relative overflow-hidden;
+    border: 1px solid;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+  }
+  
+  .btn-cyber:hover {
+    color: #000000;
+    background: linear-gradient(45deg, #00ff88, #00d4ff);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+  }
+  
+  .light .btn-cyber:hover {
+    color: #ffffff;
+    background: linear-gradient(45deg, #006b3d, #0091cc);
+    box-shadow: 0 0 20px rgba(0, 107, 61, 0.4);
+  }
+  
+  .btn-cyber::before {
+    content: '';
+    @apply absolute inset-0 opacity-0 transition-opacity duration-300;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+    z-index: -1;
+  }
+  
+  .btn-cyber:hover::before {
+    opacity: 1;
+  }
+  
+  /* Améliorations spécifiques pour le mode clair */
+  .light .card-cyber {
+    box-shadow: 
+      0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+      0 2px 4px -1px rgba(0, 0, 0, 0.06),
+      0 0 0 1px rgba(0, 107, 61, 0.1);
+  }
+  
+  .light .cyber-border {
+    border-color: rgba(0, 107, 61, 0.3);
+  }
+  
+  .light .cyber-border::before {
+    background: linear-gradient(45deg, rgba(0, 107, 61, 0.1), rgba(204, 0, 86, 0.1), rgba(0, 145, 204, 0.1));
+    opacity: 0.3;
+  }
+  
+  /* Amélioration du contraste pour les textes en mode clair */
+  .light h1, .light h2, .light h3, .light h4, .light h5, .light h6 {
+    color: var(--color-text);
+  }
+  
+  .light .text-primary {
+    color: var(--color-primary) !important;
+  }
+  
+  .light .text-accent {
+    color: var(--color-accent) !important;
+  }
+  
+  .light .text-secondary {
+    color: var(--color-secondary) !important;
+  }
+  
+  .light .text-text-muted {
+    color: var(--color-text-muted) !important;
+  }
+}

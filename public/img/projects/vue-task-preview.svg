@@ -1,0 +1,65 @@
+<svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FC08D;stop-opacity:0.2" />
+      <stop offset="50%" style="stop-color:#00ff88;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.2" />
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#4FC08D" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="240" fill="#0a0a0a"/>
+  <rect width="400" height="240" fill="url(#bg)"/>
+  <rect width="400" height="240" fill="url(#grid)"/>
+  
+  <!-- Task Manager mockup -->
+  <g transform="translate(50, 30)">
+    <!-- App window -->
+    <rect x="0" y="0" width="300" height="180" rx="8" fill="#1a1a1a" stroke="#4FC08D" stroke-width="1"/>
+    <!-- Header -->
+    <rect x="0" y="0" width="300" height="35" rx="8" fill="#2d3748"/>
+    <text x="20" y="22" fill="#4FC08D" font-family="monospace" font-size="12" font-weight="bold">TaskManager</text>
+    
+    <!-- Tasks list -->
+    <g transform="translate(20, 50)">
+      <!-- Task 1 -->
+      <rect x="0" y="0" width="260" height="25" rx="4" fill="#4FC08D" opacity="0.1" stroke="#4FC08D" stroke-width="1"/>
+      <circle cx="10" cy="12.5" r="6" fill="#4FC08D"/>
+      <text x="25" y="16" fill="#fff" font-family="monospace" font-size="10">✓ Développer interface utilisateur</text>
+      
+      <!-- Task 2 -->
+      <rect x="0" y="35" width="260" height="25" rx="4" fill="#ff006e" opacity="0.1" stroke="#ff006e" stroke-width="1"/>
+      <circle cx="10" cy="47.5" r="6" fill="none" stroke="#ff006e" stroke-width="2"/>
+      <text x="25" y="51" fill="#fff" font-family="monospace" font-size="10">○ Intégrer API REST</text>
+      
+      <!-- Task 3 -->
+      <rect x="0" y="70" width="260" height="25" rx="4" fill="#00d4ff" opacity="0.1" stroke="#00d4ff" stroke-width="1"/>
+      <circle cx="10" cy="82.5" r="6" fill="none" stroke="#00d4ff" stroke-width="2"/>
+      <text x="25" y="86" fill="#fff" font-family="monospace" font-size="10">○ Tests unitaires</text>
+      
+      <!-- Add button -->
+      <rect x="0" y="105" width="260" height="25" rx="4" fill="#333" stroke="#666" stroke-width="1" stroke-dasharray="4,4"/>
+      <text x="130" y="120" text-anchor="middle" fill="#666" font-family="monospace" font-size="10">+ Ajouter une tâche</text>
+    </g>
+  </g>
+  
+  <!-- Vue.js logo hint -->
+  <g transform="translate(350, 20)">
+    <polygon points="25,10 35,30 15,30" fill="#4FC08D"/>
+    <polygon points="25,15 30,25 20,25" fill="#fff"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="200" y="220" text-anchor="middle" fill="#4FC08D" font-family="monospace" font-size="12" opacity="0.9">
+    VUE TASK MANAGER
+  </text>
+  
+  <!-- Corner decorations -->
+  <path d="M0 0 L25 0 L25 2 L2 2 L2 25 L0 25 Z" fill="#4FC08D" opacity="0.6"/>
+  <path d="M400 0 L375 0 L375 2 L398 2 L398 25 L400 25 Z" fill="#4FC08D" opacity="0.6"/>
+  <path d="M0 240 L25 240 L25 238 L2 238 L2 215 L0 215 Z" fill="#4FC08D" opacity="0.6"/>
+  <path d="M400 240 L375 240 L375 238 L398 238 L398 215 L400 215 Z" fill="#4FC08D" opacity="0.6"/>
+</svg>

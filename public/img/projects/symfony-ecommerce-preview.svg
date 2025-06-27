@@ -1,0 +1,79 @@
+<svg width="400" height="240" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#777BB4;stop-opacity:0.2" />
+      <stop offset="50%" style="stop-color:#ff006e;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.2" />
+    </linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#777BB4" stroke-width="0.5" opacity="0.4"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="240" fill="#0a0a0a"/>
+  <rect width="400" height="240" fill="url(#bg)"/>
+  <rect width="400" height="240" fill="url(#grid)"/>
+  
+  <!-- E-commerce mockup -->
+  <g transform="translate(40, 25)">
+    <!-- Browser window -->
+    <rect x="0" y="0" width="320" height="190" rx="8" fill="#1a1a1a" stroke="#777BB4" stroke-width="1"/>
+    <!-- Browser bar -->
+    <rect x="0" y="0" width="320" height="25" rx="8" fill="#333"/>
+    <circle cx="15" cy="12.5" r="4" fill="#ff006e"/>
+    <circle cx="35" cy="12.5" r="4" fill="#ffbb00"/>
+    <circle cx="55" cy="12.5" r="4" fill="#00ff88"/>
+    
+    <!-- Header -->
+    <rect x="10" y="35" width="300" height="25" fill="#2d3748"/>
+    <text x="20" y="50" fill="#777BB4" font-family="monospace" font-size="10" font-weight="bold">🛒 SYMFONY SHOP</text>
+    <rect x="250" y="40" width="50" height="15" rx="8" fill="#ff006e" opacity="0.3"/>
+    <text x="275" y="50" text-anchor="middle" fill="#ff006e" font-family="monospace" font-size="8">PANIER</text>
+    
+    <!-- Product grid -->
+    <g transform="translate(20, 70)">
+      <!-- Product 1 -->
+      <rect x="0" y="0" width="80" height="80" rx="4" fill="#777BB4" opacity="0.2" stroke="#777BB4" stroke-width="1"/>
+      <rect x="10" y="10" width="60" height="40" rx="2" fill="#00d4ff" opacity="0.3"/>
+      <rect x="10" y="55" width="40" height="3" fill="#fff" opacity="0.7"/>
+      <rect x="10" y="62" width="30" height="2" fill="#00ff88"/>
+      <text x="55" y="75" fill="#777BB4" font-family="monospace" font-size="8">€99</text>
+      
+      <!-- Product 2 -->
+      <rect x="90" y="0" width="80" height="80" rx="4" fill="#777BB4" opacity="0.2" stroke="#777BB4" stroke-width="1"/>
+      <rect x="100" y="10" width="60" height="40" rx="2" fill="#ff006e" opacity="0.3"/>
+      <rect x="100" y="55" width="40" height="3" fill="#fff" opacity="0.7"/>
+      <rect x="100" y="62" width="30" height="2" fill="#00ff88"/>
+      <text x="145" y="75" fill="#777BB4" font-family="monospace" font-size="8">€149</text>
+      
+      <!-- Product 3 -->
+      <rect x="180" y="0" width="80" height="80" rx="4" fill="#777BB4" opacity="0.2" stroke="#777BB4" stroke-width="1"/>
+      <rect x="190" y="10" width="60" height="40" rx="2" fill="#00ff88" opacity="0.3"/>
+      <rect x="190" y="55" width="40" height="3" fill="#fff" opacity="0.7"/>
+      <rect x="190" y="62" width="30" height="2" fill="#00ff88"/>
+      <text x="235" y="75" fill="#777BB4" font-family="monospace" font-size="8">€79</text>
+    </g>
+    
+    <!-- Footer -->
+    <rect x="10" y="160" width="300" height="20" fill="#2d3748"/>
+    <text x="160" y="172" text-anchor="middle" fill="#777BB4" font-family="monospace" font-size="8">Powered by Symfony & Doctrine</text>
+  </g>
+  
+  <!-- Symfony logo hint -->
+  <g transform="translate(10, 10)">
+    <rect x="0" y="0" width="20" height="20" rx="4" fill="#777BB4"/>
+    <text x="10" y="14" text-anchor="middle" fill="#fff" font-family="monospace" font-size="12" font-weight="bold">S</text>
+  </g>
+  
+  <!-- Text -->
+  <text x="200" y="220" text-anchor="middle" fill="#777BB4" font-family="monospace" font-size="12" opacity="0.9">
+    SYMFONY E-COMMERCE
+  </text>
+  
+  <!-- Corner decorations -->
+  <path d="M0 0 L25 0 L25 2 L2 2 L2 25 L0 25 Z" fill="#777BB4" opacity="0.6"/>
+  <path d="M400 0 L375 0 L375 2 L398 2 L398 25 L400 25 Z" fill="#777BB4" opacity="0.6"/>
+  <path d="M0 240 L25 240 L25 238 L2 238 L2 215 L0 215 Z" fill="#777BB4" opacity="0.6"/>
+  <path d="M400 240 L375 240 L375 238 L398 238 L398 215 L400 215 Z" fill="#777BB4" opacity="0.6"/>
+</svg>
