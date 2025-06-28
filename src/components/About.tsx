@@ -27,8 +27,7 @@ export function About() {
       subtitle: "M2 Ingénierie du Web - ESGI (École supérieure d'ingénierie informatique) Lyon",
       description: "Master spécialisé en développement web moderne, architecture logicielle et technologies émergentes.",
       year: "2024-2025",
-      color: "primary",
-      logo: "/img/logo_esgi.png"
+      color: "primary"
     },
     {
       icon: Briefcase,
@@ -36,8 +35,7 @@ export function About() {
       subtitle: "Développeur chez AppyMakers",
       description: "Développement d'applications web et mobiles innovantes en utilisant les dernières technologies (JS).",
       year: "2023-Présent",
-      color: "accent",
-      logo: "/img/logo_appymakers.png"
+      color: "accent"
     },
     {
       icon: Code,
@@ -112,20 +110,20 @@ export function About() {
                   whileHover={{ scale: 1.02, rotateY: 5 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+                  <div className="flex flex-col lg:flex-row items-center lg:items-center gap-6">
                     <div className={`p-4 rounded-xl bg-${item.color}/10 border border-${item.color}/20`}>
                       <item.icon className={`w-8 h-8 text-${item.color}`} />
                     </div>
                     
                     <div className="flex-1 space-y-2">
-                      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
-                        <h4 className="text-xl font-cyber font-bold">{item.title}</h4>
-                        <span className={`text-${item.color} font-mono text-sm px-3 py-1 rounded-full bg-${item.color}/10 border border-${item.color}/20`}>
+                      <div className="flex flex-col lg:flex-row items-center lg:items-center lg:justify-between">
+                        <h4 className="text-xl font-cyber font-bold text-center lg:text-left">{item.title}</h4>
+                        <span className={`text-${item.color} font-mono text-sm px-2 py-1 mt-1 lg:mt-0 rounded-full bg-${item.color}/10 border border-${item.color}/20 inline-block w-fit`}>
                           {item.year}
                         </span>
                       </div>
-                      <h5 className="text-lg text-text-muted font-mono">{item.subtitle}</h5>
-                      <p className="text-text-muted leading-relaxed">{item.description}</p>
+                      <h5 className="text-lg text-text-muted font-mono text-center lg:text-left">{item.subtitle}</h5>
+                      <p className="text-text-muted leading-relaxed text-center lg:text-left">{item.description}</p>
                     </div>
                   </div>
                 </motion.div>

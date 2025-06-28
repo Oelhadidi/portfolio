@@ -50,7 +50,7 @@ export function Skills() {
     { name: 'jQuery', icon: SiJquery, color: '#0769AD', category: 'Frontend' },
     { name: 'Figma', icon: SiFigma, color: '#F24E1E', category: 'Design' },
     { name: 'Docker', icon: SiDocker, color: '#2496ED', category: 'DevOps' },
-    { name: 'GitHub', icon: SiGithub, color: '#181717', category: 'DevOps' },
+    { name: 'GitHub', icon: SiGithub, color: '#FFFFFF', category: 'DevOps' },
   ]
 
   const skillsPerView = 5
@@ -134,7 +134,7 @@ export function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="relative"
+            className="relative hidden lg:block"
           >
             {/* Carousel Container */}
             <div className="overflow-hidden rounded-2xl cyber-border">
@@ -213,10 +213,10 @@ export function Skills() {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  className={`w-3 h-3 rounded-full border transition-all duration-300 ${
                     index === currentIndex
-                      ? 'bg-primary scale-125'
-                      : 'bg-primary/30 hover:bg-primary/50'
+                      ? 'bg-primary border-primary scale-125'
+                      : 'bg-primary/30 border-primary/50 hover:bg-primary/50 hover:border-primary/70'
                   }`}
                 />
               ))}

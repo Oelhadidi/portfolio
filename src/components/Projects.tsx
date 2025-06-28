@@ -42,7 +42,7 @@ const fallbackProjects: GitHubRepo[] = [
     id: 1,
     name: "Portfolio",
     description: "Portfolio personnel développé avec Next.js, Tailwind CSS et Framer Motion",
-    html_url: "https://github.com/Oelhadidi",
+    html_url: "https://github.com/Oelhadidi/portfolio",
     homepage: "https://omar-portfolio.dev",
     stargazers_count: 5,
     forks_count: 2,
@@ -428,10 +428,10 @@ export function Projects() {
                         <button
                           key={index}
                           onClick={() => setCurrentIndex(index)}
-                          className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                          className={`w-3 h-3 rounded-full border transition-all duration-300 ${
                             index === currentIndex
-                              ? 'bg-primary scale-125'
-                              : 'bg-primary/30 hover:bg-primary/50'
+                              ? 'bg-primary border-primary scale-125'
+                              : 'bg-primary/30 border-primary/50 hover:bg-primary/50 hover:border-primary/70'
                           }`}
                         />
                       ))}

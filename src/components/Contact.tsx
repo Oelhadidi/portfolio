@@ -1,8 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Mail, MapPin, Phone, Github, Linkedin, Send, User, MessageSquare } from 'lucide-react'
+import { sendEmail, initEmailJS } from '@/lib/emailjs'
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -13,6 +14,11 @@ export function Contact() {
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
+
+  // Initialiser EmailJS au montage du composant
+  useEffect(() => {
+    initEmailJS()
+  }, [])
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
@@ -27,12 +33,16 @@ export function Contact() {
     setIsSubmitting(true)
     
     try {
-      // Simuler l'envoi d'email (à remplacer par votre service d'email)
-      await new Promise(resolve => setTimeout(resolve, 2000))
+      const result = await sendEmail(formData)
       
-      setSubmitStatus('success')
-      setFormData({ name: '', email: '', subject: '', message: '' })
+      if (result.success) {
+        setSubmitStatus('success')
+        setFormData({ name: '', email: '', subject: '', message: '' })
+      } else {
+        setSubmitStatus('error')
+      }
     } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error)
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
