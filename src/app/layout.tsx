@@ -9,10 +9,14 @@ export const metadata: Metadata = {
   authors: [{ name: 'Omar ELHADIDI' }],
   creator: 'Omar ELHADIDI',
   publisher: 'Omar ELHADIDI',
+  metadataBase: new URL('https://omarelhadidi.dev'),
+  alternates: {
+    canonical: 'https://omarelhadidi.dev',
+  },
   openGraph: {
     title: 'Omar ELHADIDI - Développeur Web Full Stack',
     description: 'Portfolio de Omar ELHADIDI, développeur web passionné spécialisé en technologies modernes.',
-    url: 'https://omar-elhadidi.dev',
+    url: 'https://omarelhadidi.dev',
     siteName: 'Omar ELHADIDI Portfolio',
     locale: 'fr_FR',
     type: 'website',

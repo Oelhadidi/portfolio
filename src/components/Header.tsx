@@ -54,7 +54,7 @@ export function Header() {
             className="text-2xl font-cyber font-bold glow-text cursor-pointer"
             onClick={() => scrollToSection('#home')}
           >
-            Omar<span className="text-accent">.</span>dev
+            OmarElhadidi<span className="text-accent">.</span>dev
           </motion.div>
 
           {/* Desktop Navigation */}

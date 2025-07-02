@@ -2,9 +2,9 @@ import emailjs from '@emailjs/browser'
 
 // Configuration EmailJS
 export const EMAILJS_CONFIG = {
-  SERVICE_ID: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_portfolio',
-  TEMPLATE_ID: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_contact',
-  PUBLIC_KEY: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'your_public_key_here'
+  SERVICE_ID: 'service_yn0zopk',
+  TEMPLATE_ID: 'template_fcwv1wh',
+  PUBLIC_KEY: '3Wa4SPZiYJm6DmNzM'
 }
 
 // Initialiser EmailJS
