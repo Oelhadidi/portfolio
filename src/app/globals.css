@@ -27,10 +27,13 @@
 
   html {
     font-family: 'Fira Code', monospace;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
   }
   
   body {
     @apply bg-background text-text transition-colors duration-300;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
+    max-width: 100vw; /* Limite la largeur à l'écran */
   }
   
   .light body {
@@ -39,6 +42,12 @@
 }
 
 @layer components {
+  /* Classe pour empêcher le débordement horizontal */
+  .container-safe {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+  
   .cyber-border {
     @apply border relative;
     border-color: rgba(0, 255, 136, 0.3);
@@ -154,5 +163,18 @@
   
   .light .text-text-muted {
     color: var(--color-text-muted) !important;
+  }
+  
+  /* Protection contre le débordement horizontal sur mobile */
+  @media (max-width: 375px) {
+    body {
+      overflow-x: hidden !important;
+    }
+    
+    .container {
+      max-width: 100vw !important;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
   }
 }

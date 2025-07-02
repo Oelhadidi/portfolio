@@ -28,7 +28,7 @@ export function Hero() {
   }
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-20 pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-20 pt-20">
       <div className="container mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -101,7 +101,7 @@ export function Hero() {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="flex justify-center lg:justify-end"
+            className="flex justify-center lg:justify-end p-4"
           >
             <motion.div
               className="relative"
@@ -114,7 +114,7 @@ export function Hero() {
                 scale: { duration: 0.3 }
               }}
             >
-              <div className="relative w-80 h-80 lg:w-96 lg:h-96">
+              <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 mx-auto">
                 {/* Cyberpunk frame effect */}
                 <div className="absolute inset-0 border-2 border-primary/30 rounded-2xl transform rotate-6"></div>
                 <div className="absolute inset-0 border-2 border-accent/30 rounded-2xl transform -rotate-6"></div>
